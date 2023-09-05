@@ -1,6 +1,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Needed if your app search for Bluetooth devices. -->
+    <!--
+          If your app doesn't use Bluetooth scan results to derive physical location information,
+          you can strongly assert that your app doesn't derive physical location.
+        -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+      android:usesPermissionFlags="neverForLocation" />
+    <!-- Needed if you want to interact with a BLE device. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- Needed if your app makes the current device discoverable to other Bluetooth devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
 
     <application
       android:name=".MainApplication"
