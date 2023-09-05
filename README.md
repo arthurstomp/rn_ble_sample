@@ -2,15 +2,9 @@
 
 This is a simple app to try out React Native integrations with Bluetooth low energy(BLE).
 
-
-
 https://github.com/arthurstomp/rn_ble_sample/assets/1282750/4b094e46-e97a-4dbf-8fd3-0c3ae78e3b1c
 
-
-
 https://github.com/arthurstomp/rn_ble_sample/assets/1282750/9779acfa-4299-4fed-a8cc-3cdd0bf05b43
-
-
 
 # Getting Started
 
