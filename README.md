@@ -1,4 +1,6 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Bluetooth Low Energy Sample
+
+This is a simple app to try out React Native integrations with Bluetooth low energy(BLE).
 
 # Getting Started
 
