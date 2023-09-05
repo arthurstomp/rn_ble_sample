@@ -26,7 +26,7 @@ async function connect(
       await BleManager.connect(peripheral.id);
 
       // before retrieving services, it is often a good idea to let bonding & connection finish properly
-      await sleep(1000);
+      await sleep(2000);
       setConnected(true);
       console.log('connected');
       const peripheralData = await BleManager.retrieveServices(peripheral.id);
@@ -129,9 +129,9 @@ export default function Device({route}: Props) {
     }
   }, [connected, peripheral]);
 
-  const handlePong = useCallback(async () => {
+  const handlePing = useCallback(async () => {
     if (connected && peripheral) {
-      console.log('Pong');
+      console.log('Ping');
       pong(peripheral);
     }
   }, [connected, peripheral]);
@@ -148,8 +148,8 @@ export default function Device({route}: Props) {
           </Pressable>
         )}
         {connected && (
-          <Pressable style={styles.button} onPress={handlePong}>
-            <Text style={styles.text}>Pong</Text>
+          <Pressable style={styles.button} onPress={handlePing}>
+            <Text style={styles.text}>Ping</Text>
           </Pressable>
         )}
 
