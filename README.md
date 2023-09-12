@@ -1,5 +1,8 @@
 # React Native Bluetooth Low Energy Sample
 
+> The goal of this example is to communicate with this ping-pong code running on a ESP32.
+> https://github.com/fschuindt/bluetooth_le_ping_pong
+
 This is a simple app to try out React Native integrations with Bluetooth low energy(BLE).
 
 https://github.com/arthurstomp/rn_ble_sample/assets/1282750/4b094e46-e97a-4dbf-8fd3-0c3ae78e3b1c
